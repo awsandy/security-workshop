@@ -43,16 +43,16 @@ https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?
 * Click "I acknowledge that AWS CloudFormation might create IAM resources with custom names."
 * Click "Create Stack"
 
-### This stack creates:
+### *This stack creates:*
 
-* Three Amazon EC2 Instances (and supporting network infrastructure)
-  * Two Instances that contain the name “Compromised Instance”
-  * One instance that contains the name “Malicious Instance”
-* AWS IAM Role For EC2 which will have permissions to SSM Parameter Store and DynamoDB
-* One Amazon SNS Topic so you will be able to receive notifications
-* Three AWS CloudWatch Event rules for triggering the appropriate notification or remediation
-* Two AWS Lambda functions that will be used for remediating findings and will have permissions to modify Security Groups and revoke active IAM Role sessions (on only the IAM Role associated with this scenario)
-* AWS Systems Manager Parameter Store value for storing a fake database password.
+* *Three Amazon EC2 Instances (and supporting network infrastructure).*
+  * *Two Instances that contain the name “Compromised Instance”.*
+  * *One instance that contains the name “Malicious Instance”.*
+* *AWS IAM Role For EC2 which will have permissions to SSM Parameter Store and DynamoDB.*
+* *One Amazon SNS Topic so you will be able to receive notifications.*
+* *Three AWS CloudWatch Event rules for triggering the appropriate notification or remediation.*
+* *Two AWS Lambda functions that will be used for remediating findings and will have permissions to modify Security Groups and revoke active IAM Role sessions (on only the IAM Role associated with this scenario).*
+* *AWS Systems Manager Parameter Store value for storing a fake database password.*
   
 
 ## Accept the SNS email
