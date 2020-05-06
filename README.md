@@ -2,7 +2,7 @@
 
 ## Login with Event Engine
 
-* goto URL dashboard.eventengine.run 
+* Visit the URL dashboard.eventengine.run 
   * Enter your HASH
   * Click "Open AWS Console"
 
@@ -14,6 +14,7 @@
   * Click "Enable Guard Duty"
 
 * Visit Services -> config
+  * Click "Get Started"
   * Click "Next"
   * Click "Next"
   * Click "Configure"
