@@ -1,33 +1,43 @@
 # GuardDuty and Supplemental Material
 
-Visit dashboard.eventengine.run and enter your HASH
-Click "Open AWS Console"
+## Login with Event Engine
+
+* Visit dashboard.eventengine.run 
+* Enter your HASH
+* Click "Open AWS Console"
 
 
-1. Setup GuardDuty, SecurityHub
-Visit Services -> GuardDuty and click 
-"Get Started" then "Enable Guard Duty"
+## Setup GuardDuty AWS Config & SecurityHub
+   
+* Visit Services -> GuardDuty 
+* Click "Get Started" 
+* Click "Enable Guard Duty"
 
-2. Visit Services -> Security Hub
-Click "Go to Security Hub"
-Click "Enable Security Hub:
+* Visit Services -> config
+* Click "Next"
+* Click "Next"
+* Click "Configure"
 
+* Visit Services -> Security Hub
+* Click "Go to Security Hub"
+* Click "Enable Security Hub"
 
-3. Run the following Cloud Formation
+--- 
 
+## Run the following Cloud Formation
 
+* Open a new tab in your browser and use this link
 
-#### Run the following Cloud Formation Script
 * https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=GuardDuty-Hands-On&templateURL=https://sa-security-specialist-workshops-us-west-2.s3-us-west-2.amazonaws.com/guardduty-hands-on/amazon-guard-duty-revamped-v1.yml
 
-Click "Next"
-Enter youremail@your.domain
-Click "Next"
-Click "Next"
-Click "I acknowledge that AWS CloudFormation might create IAM resources with custom names."
-Click "Create Stack"
+* Click "Next"
+* Enter youremail@your.domain
+* Click "Next"
+* Click "Next"
+* Click "I acknowledge that AWS CloudFormation might create IAM resources with custom names."
+* Click "Create Stack"
 
-Creates:
+This stack creates:
 
 * Three Amazon EC2 Instances (and supporting network infrastructure)
   * Two Instances that contain the name “Compromised Instance”
@@ -39,55 +49,66 @@ Creates:
 * AWS Systems Manager Parameter Store value for storing a fake database password.
   
 
-**Accept the SNS email**
-Look in your email for the AWS Notifications email and use the "confirm subscription" link within to accept the SNS subscription.
+## Accept the SNS email
 
-Wait 5 Minutes for the stack to create
+* Look in your email for the AWS Notifications email * Use the "confirm subscription" link within to accept the SNS subscription.
+
+**Wait 5 Minutes for the stack to create**
 Check progress by looking in 
 CloudFormation -> Stacks ->  GuardDuty-Hands-On
 
-## Extra
-### System Manager
-In the console navigate to:
-Services -> Systems Manager
+---
 
-Click "Managed Instances" - look for "Scenario 3"
-Click "Actions" select "Run Command"
-In the search box Search enter "AmazonInsp"
-Select "AmazonInspector-ManageAWSAgent"
-Scroll down and Click "Choose Instances Manually"
-Select the "GuardDuty-Example: Compromised Instance: Scenario 3" Instance
-scroll down and unselect "Enable writing to an S3 bucket"
-Click "RUN"
+## Extra Pre Lab Activities 
+## Setup Amazon Inspector Agent in System Manager
+
+In the console navigate to:
+
+* Services -> Systems Manager
+
+* Click "Managed Instances" - look for "Scenario 3"
+* Click "Actions" select "Run Command"
+* In the search box Search enter "AmazonInsp"
+* Select "AmazonInspector-ManageAWSAgent"
+* Scroll down and Click "Choose Instances Manually"
+* Select the "GuardDuty-Example: Compromised * Instance: Scenario 3" Instance
+* scroll down and unselect "Enable writing to an S3 bucket"
+* Click "RUN"
 
 Should see the command "In-progress" 
 Wait 30 seconds and refresh your browser
 Should see the command "Success" 
 
+## Initiate an Inspector Scan
 
-1. Visit Services -> Inspector
-   Click "Get Started"
-   Click "Run Once"
+* Visit Services -> Inspector
+* Click "Get Started"
+* Click "Run Once"
 
-If you see an error about a role not being created 
+**If you see an error about a role not being created - wait a few seconds and then** 
 
-Click "Run Once" Again
+* Click "Run Once" Again
 
-On the left click "Assesment templates" 
-Select the template "Assessment-Template-Default-All-Rules"
-Click "Run"
+* On the left click "Assesment templates" 
+* Select the template "Assessment-Template-Default-All-Rules"
+*Click "Run"
 
 
-On the left click "Assesment runs" should see a run with status "Collecting Data" 
+* On the left click "Assesment runs" 
+  
+You should see a run with status "Collecting Data" 
 
 Next proceed to the Guard Duty Lab
+
+---
 
 ## Guard Duty Lab
 
 https://hands-on-guardduty.awssecworkshops.com/
 
+---
 
-## Extra Activities
+## Extra Post Lab Activities
 
 What are the Inspector Findings ?
 - Inspector showing a lot of CVE's ?
@@ -103,12 +124,9 @@ yum -y update
 Walk Through Security Hub
 
 
-AWS Demo
+Watch the AWS Demo
 
-
-
-
-
+---
 
 ## References
 
