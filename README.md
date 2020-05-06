@@ -37,7 +37,7 @@ https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?
 * Click "I acknowledge that AWS CloudFormation might create IAM resources with custom names."
 * Click "Create Stack"
 
-This stack creates:
+### This stack creates:
 
 * Three Amazon EC2 Instances (and supporting network infrastructure)
   * Two Instances that contain the name “Compromised Instance”
@@ -51,29 +51,31 @@ This stack creates:
 
 ## Accept the SNS email
 
-* Look in your email for the AWS Notifications email * Use the "confirm subscription" link within to accept the SNS subscription.
+* Look in your email for the AWS Notifications email 
+  * Use the "confirm subscription" link within to accept the SNS subscription.
 
 **Wait 5 Minutes for the stack to create**
-Check progress by looking in 
-CloudFormation -> Stacks ->  GuardDuty-Hands-On
+
+Back in the AWS console Check progress by looking in 
+
+* CloudFormation -> Stacks ->  GuardDuty-Hands-On
 
 ---
 
-## Extra Pre Lab Activities 
+### Extra Pre Lab Activities 
 ## Setup Amazon Inspector Agent in System Manager
 
 In the console navigate to:
 
 * Services -> Systems Manager
-
-* Click "Managed Instances" - look for "Scenario 3"
-* Click "Actions" select "Run Command"
-* In the search box Search enter "AmazonInsp"
-* Select "AmazonInspector-ManageAWSAgent"
-* Scroll down and Click "Choose Instances Manually"
-* Select the "GuardDuty-Example: Compromised * Instance: Scenario 3" Instance
-* scroll down and unselect "Enable writing to an S3 bucket"
-* Click "RUN"
+  * Click "Managed Instances" - look for "Scenario 3"
+  * Click "Actions" select "Run Command"
+  * In the search box Search enter "AmazonInsp"
+  * Select "AmazonInspector-ManageAWSAgent"
+  * Scroll down and Click "Choose Instances Manually"
+  * Select the "GuardDuty-Example: Compromised * Instance: Scenario 3" Instance
+  * scroll down and unselect "Enable writing to an S3 bucket"
+  * Click "RUN"
 
 Should see the command "In-progress" 
 Wait 30 seconds and refresh your browser
@@ -91,7 +93,7 @@ Should see the command "Success"
 
 * On the left click "Assesment templates" 
 * Select the template "Assessment-Template-Default-All-Rules"
-*Click "Run"
+* Click "Run"
 
 
 * On the left click "Assesment runs" 
