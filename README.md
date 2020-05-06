@@ -19,6 +19,11 @@
   * Click "Next"
   * Click "Configure"
 
+* Visit Services -> IAM
+  * Click "Access analyzer"   (on the left)
+  * Click "Create analyzer"
+  * Click "Create analyzer"
+
 * Visit Services -> Security Hub
   * Click "Go to Security Hub"
   * Click "Enable Security Hub"
