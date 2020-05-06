@@ -1,4 +1,4 @@
-# GuardDuty and Supplemental Material
+# Security Workshop - Part 1
 
 ## Login with Event Engine
 
@@ -107,6 +107,8 @@ Next proceed to the Guard Duty Lab
 
 ---
 
+# Security Workshop - Part 2
+
 ## Perform the main GuardDuty Lab
 
 https://hands-on-guardduty.awssecworkshops.com/
@@ -115,14 +117,19 @@ https://hands-on-guardduty.awssecworkshops.com/
 
 ---
 
-## Extra Post Lab Activities
+# Security Workshop - Part 3
+
+## Extra Activities
 
 What are the Inspector Findings ?
 - Inspector showing a lot of CVE's ?
 - CIS Hardening Issues ?
 - Other findings ?
 
-Walk Through Security Hub - what is it teeling you - what will it tell you 
+Walk Through Security Hub 
+* What is it telling you 
+* What will it tell you 
+
 
 Watch the AWS Demo
 
