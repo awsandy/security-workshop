@@ -62,8 +62,7 @@ Back in the AWS console Check progress by looking in
 * CloudFormation -> Stacks ->  GuardDuty-Hands-On
 
 ---
-
-### Extra Pre Lab Activities 
+ 
 ## Setup Amazon Inspector Agent using Systems Manager
 
 In the console navigate to:
