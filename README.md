@@ -79,7 +79,9 @@ In the console navigate to:
   * Click "RUN"
 
 Should see the command "In-progress" 
+
 Wait 30 seconds and refresh your browser
+
 Should see the command "Success" 
 
 ## Initiate an Inspector Scan
