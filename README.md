@@ -1,4 +1,4 @@
-# GuardDuty and supplimental material
+# GuardDuty and Supplemental Material
 
 Visit dashboard.eventengine.run and enter your HASH
 Click "Open AWS Console"
@@ -40,7 +40,7 @@ Creates:
   
 
 **Accept the SNS email**
-Look in your email for the AWS Notifcations email and use the "conform subscription" link within to accept the SNS subscription
+Look in your email for the AWS Notifications email and use the "confirm subscription" link within to accept the SNS subscription.
 
 Wait 5 Minutes for the stack to create
 Check progress by looking in 
@@ -49,9 +49,9 @@ CloudFormation -> Stacks ->  GuardDuty-Hands-On
 ## Extra
 ### System Manager
 In the console navigate to:
-Services -> Ssystems Manager
+Services -> Systems Manager
 
-Click "Managed Instances" - look for "Scenarion 3"
+Click "Managed Instances" - look for "Scenario 3"
 Click "Actions" select "Run Command"
 In the search box Search enter "AmazonInsp"
 Select "AmazonInspector-ManageAWSAgent"
@@ -61,7 +61,7 @@ scroll down and unselect "Enable writing to an S3 bucket"
 Click "RUN"
 
 Should see the command "In-progress" 
-Wait 30 seconds and refresh brwoser
+Wait 30 seconds and refresh your browser
 Should see the command "Success" 
 
 
@@ -89,7 +89,7 @@ https://hands-on-guardduty.awssecworkshops.com/
 
 ## Extra Activities
 
-What are Inspectors Findings ?
+What are the Inspector Findings ?
 - Inspector showing a lot of CVE's ?
 - CIS Hardening Issues ?
 - 
