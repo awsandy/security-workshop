@@ -64,7 +64,7 @@ Back in the AWS console Check progress by looking in
 ---
 
 ### Extra Pre Lab Activities 
-## Setup Amazon Inspector Agent in System Manager
+## Setup Amazon Inspector Agent using Systems Manager
 
 In the console navigate to:
 
@@ -107,9 +107,11 @@ Next proceed to the Guard Duty Lab
 
 ---
 
-## Guard Duty Lab
+## Perform the main GuardDuty Lab
 
 https://hands-on-guardduty.awssecworkshops.com/
+
+**once this lab is completed return here**
 
 ---
 
@@ -118,16 +120,9 @@ https://hands-on-guardduty.awssecworkshops.com/
 What are the Inspector Findings ?
 - Inspector showing a lot of CVE's ?
 - CIS Hardening Issues ?
-- 
+- Other findings ?
 
-Remediate patches:
-
-Run Command
-AWS-RunShell
-yum -y update
-
-Walk Through Security Hub
-
+Walk Through Security Hub - what is it teeling you - what will it tell you 
 
 Watch the AWS Demo
 
