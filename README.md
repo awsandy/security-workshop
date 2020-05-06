@@ -10,23 +10,23 @@
 ## Setup GuardDuty AWS Config & SecurityHub
    
 * Visit Services -> GuardDuty 
-* Click "Get Started" 
-* Click "Enable Guard Duty"
+  * Click "Get Started" 
+  * Click "Enable Guard Duty"
 
 * Visit Services -> config
-* Click "Next"
-* Click "Next"
-* Click "Configure"
+  * Click "Next"
+  * Click "Next"
+  * Click "Configure"
 
 * Visit Services -> Security Hub
-* Click "Go to Security Hub"
-* Click "Enable Security Hub"
+  * Click "Go to Security Hub"
+  * Click "Enable Security Hub"
 
 --- 
 
 ## Run the following Cloud Formation
 
-* Open a new tab in your browser and use this link
+* Open a new tab in your browser and use this link (cut n paste)
 
 https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=GuardDuty-Hands-On&templateURL=https://sa-security-specialist-workshops-us-west-2.s3-us-west-2.amazonaws.com/guardduty-hands-on/amazon-guard-duty-revamped-v1.yml
 
