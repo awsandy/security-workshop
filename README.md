@@ -2,9 +2,9 @@
 
 ## Login with Event Engine
 
-* Visit dashboard.eventengine.run 
-* Enter your HASH
-* Click "Open AWS Console"
+* goto URL dashboard.eventengine.run 
+  * Enter your HASH
+  * Click "Open AWS Console"
 
 
 ## Setup GuardDuty AWS Config & SecurityHub
@@ -28,7 +28,7 @@
 
 * Open a new tab in your browser and use this link
 
-* https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=GuardDuty-Hands-On&templateURL=https://sa-security-specialist-workshops-us-west-2.s3-us-west-2.amazonaws.com/guardduty-hands-on/amazon-guard-duty-revamped-v1.yml
+https://console.aws.amazon.com/cloudformation/home?region=eu-west-1#/stacks/new?stackName=GuardDuty-Hands-On&templateURL=https://sa-security-specialist-workshops-us-west-2.s3-us-west-2.amazonaws.com/guardduty-hands-on/amazon-guard-duty-revamped-v1.yml
 
 * Click "Next"
 * Enter youremail@your.domain
